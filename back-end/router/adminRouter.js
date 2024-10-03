@@ -4,7 +4,7 @@ import { isAuthenticated } from "../middleware/auth.js"
 
 const router = express.Router()
 
-router.post("/post/registeradmin",adminRegister)
+router.post("/post/registeradmin",isAuthenticated,adminRegister)
 router.post("/login",adminLogin)
 router.get("/logout",isAuthenticated,adminLogout)
 
