@@ -12,7 +12,11 @@ config({path:"./config/config.env"})
 
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors())
+app.use(cors({
+    origin: [process.env.FRONT_END_URL],
+    methods:["GET","DELETE","POST"],
+    credentials:true
+}))
 
 
 app.use("/api/v1/user",applicatoinRouter)

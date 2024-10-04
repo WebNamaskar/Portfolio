@@ -53,3 +53,12 @@ export const adminLogout = catchAsyncErrors(async(req, res, next)=>{
         message:"Logged out successfully"
     })
 })
+
+
+export const getAdmin = catchAsyncErrors(async(req, res, next)=>{
+    const admin = req.admin
+    res.status(200).json({
+        success: true,
+        admin
+    })
+})

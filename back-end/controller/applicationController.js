@@ -21,7 +21,7 @@ export const getAllApplication = catchAsyncErrors(async(req, res, next)=>{
     if(!applications){
         return next(new ErrorHandler("No Applications found", 400))
     }
-    res.status(200).json({success: true, data: applications})
+    res.status(200).json({success: true, applications})
 })
 
 export const deleteApplication = catchAsyncErrors(async(req, res, next)=>{

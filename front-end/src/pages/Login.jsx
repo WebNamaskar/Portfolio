@@ -3,18 +3,21 @@ import { Context } from "../main";
 import axios from "axios";
 import { useNavigate } from "react-router";
 import AdminDashboard from "./AdminDashboard";
+import LoginForm from "../components/LoginForm";
 
 const Login = () => {
-  const { isAuthenticated, setIsAuthenticated, setAdmin } = useContext(Context);
+
+  const {isAuthenticated, setIsAuthenticated, setAdmin , admin} = useContext(Context);
+  const navigateTo = useNavigate()
   useEffect(() => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4000/api/v1/admin/getAdmin",
+          "http://localhost:4000/api/v1/admin/getadmin/me",
           { withCredentials: true }
         );
         setIsAuthenticated(true);
-        setAdmin(response.data.user);
+        setAdmin(response.data.admin);
       } catch (error) {
         setIsAuthenticated(false);
         setAdmin({});
@@ -23,9 +26,14 @@ const Login = () => {
     fetchUser();
   }, [isAuthenticated]);
 
+  if(isAuthenticated)
+  {
+    navigateTo("/dashboard/v1/admin")
+  }
+  
   return <>
   {
-    !isAuthenticated ? <LoginForm/> : <AdminDashboard/>
+    <LoginForm/>
   }
   </>;
 };
