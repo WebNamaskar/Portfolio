@@ -14,6 +14,10 @@ const applicationFormSchema = new mongoose.Schema({
     query:{
         type:String,
         required:true
+    },
+    hasdone:{
+        type:Boolean,
+        default:false
     }
 })
 

@@ -25,7 +25,7 @@ const AdminDashboard = () => {
     };
     fetchUser();
   }, [isAuthenticated]);
-
+  
   if(!isAuthenticated){
     navigateTo("/")
   }
