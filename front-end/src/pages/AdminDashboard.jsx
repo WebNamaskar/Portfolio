@@ -27,7 +27,7 @@ const AdminDashboard = () => {
   }, [isAuthenticated]);
   
   if(!isAuthenticated){
-    navigateTo("/login/v1/admin")
+    navigateTo("/")
   }
 
   return (
