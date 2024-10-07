@@ -11,7 +11,7 @@ const AdminNavBar = ({ name }) => {
 
   const handleLogout = async() => {
     try{
-        const response = await axios.get(`http://${window.location.origin}/api/v1/admin/logout`,{
+        const response = await axios.get(`https://portfolio-8y16.onrender.com/api/v1/admin/logout`,{
             withCredentials:true
         })
         toast.success(response.data.message)
