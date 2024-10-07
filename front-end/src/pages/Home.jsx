@@ -10,6 +10,7 @@ import Footer from '../components/Footer'
 const Home = () => {
   return (
     <>
+    <div className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500  ">
       <Navbar/>
       <Hero/>
       <AboutUs/>
@@ -17,6 +18,7 @@ const Home = () => {
       <Project/>
       <Contact/>
       <Footer/>
+      </div>
     </>
   )
 }

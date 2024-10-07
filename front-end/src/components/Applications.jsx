@@ -32,7 +32,7 @@ const Applications = () => {
 
   useEffect(() => {
     fetchApplications();
-  }, []);
+  }, [applications]);
 
   return (
     <div className="container bg-slate-600 h-[90.2vh] overflow-y-auto p-3 mx-auto">
@@ -64,7 +64,7 @@ const Applications = () => {
                   </td>
                   <td className="py-4 px-6 before:content-['Query:'] before:font-semibold sm:before:content-none">
                     <button
-                    onClick={deleteApplication(application._id)}>
+                    onClick={()=>{deleteApplication(application._id)}}>
                     <lord-icon
                       src="https://cdn.lordicon.com/hwjcdycb.json"
                       trigger="hover"
