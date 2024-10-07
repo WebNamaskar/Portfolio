@@ -20,7 +20,7 @@ const Contact = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try{
-      const response = await axios.post("http://localhost:4000/api/v1/user/postapplication",formData,{
+      const response = await axios.post(`http://hemant:4000/api/v1/user/postapplication`,formData,{
         withCredentials:true,
         headers:{
           'Content-Type': 'application/json',

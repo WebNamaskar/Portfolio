@@ -18,7 +18,7 @@ const LoginForm = () => {
     console.log(email,password,confirmPassword)
     e.preventDefault();
     try{
-        const response = await axios.post("http://localhost:4000/api/v1/admin/login",{email,password,confirmPassword},{
+        const response = await axios.post(`http://${windows.location.origin}/api/v1/admin/login`,{email,password,confirmPassword},{
             withCredentials:true,
             headers:{
                 "Content-Type":"application/json"

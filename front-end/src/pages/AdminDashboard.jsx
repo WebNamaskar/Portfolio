@@ -13,7 +13,7 @@ const AdminDashboard = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4000/api/v1/admin/getadmin/me",
+          `http://${windows.location.origin}/api/v1/admin/getadmin/me`,
           { withCredentials: true }
         );
         setIsAuthenticated(true);
