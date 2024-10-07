@@ -108,7 +108,7 @@ const AboutUs = () => {
         <div key={index} className="p-4 ">
           <div className="flex flex-col items-center bg-black text-white shadow-lg p-6 rounded-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-1">
             <h3 className="text-xl font-semibold mb-2 text-center">{project.name}</h3>
-            <p className="text-center text-gray-600">{project.description}</p>
+            <p className="text-center text-white">{project.description}</p>
           </div>
         </div>))}
 
