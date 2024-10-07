@@ -13,7 +13,7 @@ const AdminDashboard = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          `https://portfolio-8y16.onrender.com/api/v1/admin/getadmin/me`,
+          `https://portfolio-8y16.onrender.com/api/v1/admin/getAdmin/me`,
           { withCredentials: true }
         );
         setIsAuthenticated(true);
