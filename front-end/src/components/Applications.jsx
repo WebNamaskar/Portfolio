@@ -8,7 +8,7 @@ const Applications = () => {
   const fetchApplications = async () => {
     try {
       const { data } = await axios.get(
-        `http://${window.location.origin}/api/v1/user/getapplication`,
+        `https://portfolio-8y16.onrender.com/api/v1/user/getapplication`,
         {
           withCredentials: true,
         }
@@ -21,7 +21,7 @@ const Applications = () => {
 
   const deleteApplication = async(id) => {
     try{
-      const response = await axios.delete(`http://${windows.location.origin}/api/v1/user/deleteapplication/${id}`,{withCredentials:true})
+      const response = await axios.delete(`https://portfolio-8y16.onrender.com/api/v1/user/deleteapplication/${id}`,{withCredentials:true})
       setApplications(applications.filter(application => application.id !== id))
       toast.success(response.data.message)
     } catch (error){
