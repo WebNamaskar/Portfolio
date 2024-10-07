@@ -47,6 +47,8 @@ export const adminLogin = catchAsyncErrors(async(req,res,next)=>{
 export const adminLogout = catchAsyncErrors(async(req, res, next)=>{
     res.status(200).cookie("adminToken","",{
         httpOnly: true,
+        secure: true,
+        sameSite: 'None',
         expires: new Date(Date.now()),
     }).json({
         success:true,
