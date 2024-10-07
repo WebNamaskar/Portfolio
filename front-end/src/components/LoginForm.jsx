@@ -41,7 +41,7 @@ const LoginForm = () => {
       <div className="bg-slate-400 h-screen w-screen flex justify-center items-center ">
         <form
           onSubmit={handleSubmit}
-          className="bg-slate-500 rounded-md flex justify-center items-center flex-col w-1/2
+          className="bg-slate-500 rounded-md flex justify-center items-center flex-col w-full md:w-1/2
         p-5"
         >
           <h1 className="text-3xl text-white font-bold mb-4">Login</h1>

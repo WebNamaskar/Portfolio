@@ -29,9 +29,9 @@ const AboutUs = () => {
     };
   }, []);
   const projects = [
-    { name: "DESIGN", description: "A full-stack website built using MERN stack." },
-    { name: "DEVELOPMENT", description: "A mobile app built with React Native for iOS and Android." },
-    { name: "MAINTENANCE", description: "Cross-platform desktop app using Electron.js." },
+    { name: "DESIGN", description: "Our design approach focuses on creating visually captivating, intuitive, and user-centered experiences. We believe that great design is not just about aesthetics but also about functionality." },
+    { name: "DEVELOPMENT", description: "Our development process is centered around efficiency, functionality, and user experience. We build websites that are not only fast and responsive but also tailored to your specific needs." },
+    { name: "MAINTENANCE", description: "We provide ongoing maintenance to ensure your website stays fast, secure, and up-to-date. From regular updates to troubleshooting, we handle all the technical aspects, so you can focus on what you do best." },
   ];
   const settings = {
     infinite: true,
@@ -93,7 +93,7 @@ const AboutUs = () => {
         } text-white p-8 rounded-lg shadow-lg`}>
         <h4 className="text-2xl font-semibold mb-4">MAINTENANCE</h4>
         <p className="text-gray-200">
-        We provide ongoing maintenance to ensure your website stays fast, secure, and up-to-date. From regular updates to troubleshooting, we handle all the technical aspects, so you can focus on what you do best
+        We provide ongoing maintenance to ensure your website stays fast, secure, and up-to-date. From regular updates to troubleshooting, we handle all the technical aspects, so you can focus on what you do best.
         </p>
       </div>
     </div>
@@ -101,12 +101,12 @@ const AboutUs = () => {
   <div className="block md:hidden w-screen text-center container mx-auto py-10 px-4 overflow-x-hidden" id='aboutus'>
     <h1 className='text-4xl text-white font-bold mt-10 underline'>About us</h1>
     <p className="max-w-2xl mx-auto text-gray-600 m-5 p-5">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ut illum similique quos fugit quae eaque dicta minus velit suscipit doloremque a beatae quod earum eos voluptate, tempore unde pariatur?
+    At WebNamskar, we are a passionate team dedicated to bringing your ideas to life through tailored projects that meet your unique needs. Our goal is to enhance your online presence by creating fast, user-friendly, and visually stunning websites. Whether it's improving functionality or boosting design, we’re here to deliver solutions that make your work smoother and your digital experience more impactful. Let us help you turn your vision into reality!
     </p>
   <Slider {...settings}>
   {projects.map((project, index) => (
         <div key={index} className="p-4 ">
-          <div className="flex flex-col items-center bg-white shadow-lg p-6 rounded-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+          <div className="flex flex-col items-center bg-black text-white shadow-lg p-6 rounded-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-1">
             <h3 className="text-xl font-semibold mb-2 text-center">{project.name}</h3>
             <p className="text-center text-gray-600">{project.description}</p>
           </div>
