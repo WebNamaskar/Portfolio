@@ -16,11 +16,11 @@ const AdminDashboard = () => {
           `https://portfolio-8y16.onrender.com/api/v1/admin/getadmin/me`,
           { withCredentials: true }
         );
-        setIsAuthenticated(true);
+        // setIsAuthenticated(true);
         setAdmin(response.data.admin);
       } catch (error) {
-        setIsAuthenticated(false);
-        setAdmin({});
+        // setIsAuthenticated(false);
+        // setAdmin({});
       }
     };
     fetchUser();
