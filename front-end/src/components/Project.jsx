@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Project = () => {
   const projects = [
     { icon: <FaCode className="text-purple-500" />, name: "Qkart", description: "Always stay with the trend. Browse, select and, checkou",link:"https://hemantpanwar399-me-qkart-frontend-v2.vercel.app/" },
-    { icon: <FaMobileAlt className="text-blue-500" />, name: "Doctor Management System", description: "Book Appoinment with your doctors!",link:"https://www.google.com" },
+    { icon: <FaMobileAlt className="text-blue-500" />, name: "Doctor Management System", description: "Book Appoinment with your doctors!",link:"https://doctor-management-system-frontend.onrender.com/" },
     { icon: <FaDesktop className="text-green-500" />, name: "Qtrip", description: "A dynamic trip planner buit on MERN stack",link:"https://qtrip-dynamic-topaz-beta.vercel.app/" },
     // { icon: <FaDatabase className="text-red-500" />, name: "Database", description: "MongoDB database project with large-scale data handling." },
     // { icon: <FaCode className="text-indigo-500" />, name: "API Development", description: "RESTful APIs built using Node.js and Express." },
